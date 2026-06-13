@@ -1,0 +1,73 @@
+import React from "react";
+
+import {
+    FaGithub,
+    FaLinkedinIn,
+    FaInstagram
+} from "react-icons/fa";
+
+import { 
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger
+} from "@/components/ui/tooltip";
+import { SocialItems, SocialProps } from "@/types/components/Social";
+
+import Link from "next/link";
+
+const socials:SocialItems[] = [
+    {
+        icon: <FaLinkedinIn />,
+        path: "https://www.linkedin.com/in/ayushofficials"
+    },
+    {
+        icon: <FaGithub />,
+        path: "https://github.com/ayush7932singh"
+    },
+    {
+        icon: <FaInstagram />,
+        path: "https://www.instagram.com/ayush7932singh"
+    }
+];
+
+const Social:React.FC<SocialProps> = ({ containerStyles, iconStyles }) => {
+    return (
+        <div className={containerStyles}>
+            {socials.map((social:SocialItems, index:number) => {
+                return (
+                    <Link
+                        key={social.path}
+                        href={social.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={iconStyles}
+                    >
+                        <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                                <TooltipTrigger>
+                                    {social.icon}
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    {
+                                        index === 0 ?
+                                            "LinkedIn"
+                                        : index === 1 ?
+                                            "GitHub"
+                                        : index === 2 ?
+                                            "Instagram"
+                                        : 
+                                            ""
+                                    }
+                                </TooltipContent>
+                            </Tooltip>
+                        </TooltipProvider>
+                        
+                    </Link>
+                )
+            })}
+        </div>
+    );
+}
+
+export default Social;
