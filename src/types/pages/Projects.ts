@@ -16,6 +16,11 @@ export type ProjectStrings = {
         category: string;
         description: string;
     };
+    fourth: {
+        title: string;
+        category: string;
+        description: string;
+    };
 };
 
 export type ProjectItems<T, U> = {

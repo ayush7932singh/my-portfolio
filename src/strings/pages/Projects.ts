@@ -16,6 +16,11 @@ const projectStrings: Record<"en-us" | "br", ProjectStrings> = {
             title: "Rock Paper Scissors",
             category: "Console Game",
             description: "A console-based Rock Paper Scissors game built using Java and Object-Oriented Programming concepts. Features score tracking and clean game logic using OOP principles like encapsulation and inheritance."
+        },
+        fourth: {
+            title: "Exam DNA",
+            category: "Frontend Web App",
+            description: "A modern React frontend application built for the Exam DNA platform. Features a responsive UI and seamless user experience."
         }
     },
     br: {
@@ -33,6 +38,11 @@ const projectStrings: Record<"en-us" | "br", ProjectStrings> = {
             title: "Pedra Papel Tesoura",
             category: "Jogo de Console",
             description: "Um jogo de Pedra Papel Tesoura baseado em console, desenvolvido com Java e conceitos de Programação Orientada a Objetos. Possui rastreamento de pontuação e lógica de jogo limpa usando princípios de POO como encapsulamento e herança."
+        },
+        fourth: {
+            title: "Exam DNA",
+            category: "App Web Frontend",
+            description: "Uma aplicação frontend moderna em React construída para a plataforma Exam DNA. Apresenta uma interface responsiva e uma experiência de usuário perfeita."
         }
     }
 };

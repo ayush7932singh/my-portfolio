@@ -89,6 +89,21 @@ const Projects: React.FC = () => {
             image: "/assets/projects/Pokecut(3).jpg",
             github: "https://github.com/ayush7932singh/RockPaperScissors",
             liveDemo: null
+        },
+        {
+            index: 4,
+            num: '',
+            title: getProjectsFieldNames(language, "fourth", "title"),
+            category: getProjectsFieldNames(language, "fourth", "category"),
+            description: getProjectsFieldNames(language, "fourth", "description"),
+            type: 'Frontend',
+            stack: [
+                { index: 1, name: "React", icon: <SiReact /> },
+                { index: 2, name: "JavaScript", icon: <SiJavascript /> }
+            ],
+            image: "/assets/projects/examdna.png",
+            github: "https://github.com/ayush7932singh/ExamDNA",
+            liveDemo: "https://exam-dna-ten.vercel.app"
         }
     ], [language]);
 
@@ -217,10 +232,17 @@ const Projects: React.FC = () => {
 
                                     {/* Live Demo Notice */}
                                     <div className="border-t border-white/10 px-5 py-2 bg-white/5">
-                                        <p className="text-white/40 text-[11px] flex items-center gap-1.5">
-                                            <FaExternalLinkAlt className="text-[9px]" />
-                                            {isEnglish ? "Live demo coming soon" : "Demo ao vivo em breve"}
-                                        </p>
+                                        {item.liveDemo ? (
+                                            <Link href={item.liveDemo} target="_blank" rel="noopener noreferrer" className="text-accent text-[11px] flex items-center gap-1.5 hover:underline">
+                                                <FaExternalLinkAlt className="text-[9px]" />
+                                                {isEnglish ? "View Live Demo" : "Ver Demo ao Vivo"}
+                                            </Link>
+                                        ) : (
+                                            <p className="text-white/40 text-[11px] flex items-center gap-1.5">
+                                                <FaExternalLinkAlt className="text-[9px]" />
+                                                {isEnglish ? "Live demo coming soon" : "Demo ao vivo em breve"}
+                                            </p>
+                                        )}
                                     </div>
                                 </motion.div>
                             ))}
