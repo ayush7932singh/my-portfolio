@@ -237,14 +237,19 @@ const Projects: React.FC = () => {
                                     </div>
 
                                     {/* Live Demo Notice */}
-                                    {item.liveDemo && (
-                                        <div className="border-t border-white/10 px-5 py-2 bg-white/5">
+                                    <div className="border-t border-white/10 px-5 py-2 bg-white/5">
+                                        {item.liveDemo ? (
                                             <Link href={item.liveDemo} target="_blank" rel="noopener noreferrer" className="text-accent text-[11px] flex items-center gap-1.5 hover:underline">
                                                 <FaExternalLinkAlt className="text-[9px]" />
-                                                {isEnglish ? "View Live Demo" : "Ver Demo ao Vivo"}
+                                                {isEnglish ? "View Live" : "Ver ao Vivo"}
                                             </Link>
-                                        </div>
-                                    )}
+                                        ) : (
+                                            <p className="text-white/40 text-[11px] flex items-center gap-1.5">
+                                                <FaExternalLinkAlt className="text-[9px]" />
+                                                {isEnglish ? "Live coming soon" : "Ao vivo em breve"}
+                                            </p>
+                                        )}
+                                    </div>
                                 </motion.div>
                             ))}
                         </div>
