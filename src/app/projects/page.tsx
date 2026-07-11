@@ -109,7 +109,7 @@ const Projects: React.FC = () => {
             ],
             image: "/assets/projects/examdna.png",
             github: "https://github.com/ayush7932singh/examdna",
-            liveDemo: null
+            liveDemo: "https://exam-dna-ten.vercel.app"
         }
     ], [language]);
 
