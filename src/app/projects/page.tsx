@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
             ],
             image: "/assets/projects/Pokecut(1).jpg",
             github: "https://github.com/ayush7932singh/HealthEase",
-            liveDemo: null
+            liveDemo: "https://healthease-a0gz.onrender.com"
         },
         {
             index: 2,
