@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
             ],
             image: "/assets/projects/Pokecut (2).png",
             github: "https://github.com/ayush7932singh/myBot",
-            liveDemo: null
+            liveDemo: "https://ayush7932singh.github.io/myBot/"
         },
         {
             index: 3,
