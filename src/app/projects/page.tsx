@@ -13,7 +13,10 @@ import {
     SiNextdotjs,
     SiTailwindcss,
     SiMysql,
-    SiReact
+    SiReact,
+    SiSpringboot,
+    SiPostgresql,
+    SiJsonwebtokens
 } from "react-icons/si";
 import { FaJava, FaGithub, FaExternalLinkAlt, FaHeart, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { GiChemicalDrop } from "react-icons/gi";
@@ -96,14 +99,17 @@ const Projects: React.FC = () => {
             title: getProjectsFieldNames(language, "fourth", "title"),
             category: getProjectsFieldNames(language, "fourth", "category"),
             description: getProjectsFieldNames(language, "fourth", "description"),
-            type: 'Frontend',
+            type: 'Fullstack',
             stack: [
                 { index: 1, name: "React", icon: <SiReact /> },
-                { index: 2, name: "JavaScript", icon: <SiJavascript /> }
+                { index: 2, name: "Java", icon: <FaJava /> },
+                { index: 3, name: "Spring Boot", icon: <SiSpringboot /> },
+                { index: 4, name: "PostgreSQL", icon: <SiPostgresql /> },
+                { index: 5, name: "JWT", icon: <SiJsonwebtokens /> }
             ],
             image: "/assets/projects/examdna.png",
-            github: "https://github.com/ayush7932singh/ExamDNA",
-            liveDemo: "https://exam-dna-ten.vercel.app"
+            github: "https://github.com/ayush7932singh/examdna",
+            liveDemo: null
         }
     ], [language]);
 

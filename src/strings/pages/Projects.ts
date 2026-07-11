@@ -18,9 +18,9 @@ const projectStrings: Record<"en-us" | "br", ProjectStrings> = {
             description: "A console-based Rock Paper Scissors game built using Java and Object-Oriented Programming concepts. Features score tracking and clean game logic using OOP principles like encapsulation and inheritance."
         },
         fourth: {
-            title: "Exam DNA",
-            category: "Frontend Web App",
-            description: "A modern React frontend application built for the Exam DNA platform. Features a responsive UI and seamless user experience."
+            title: "ExamDNA — AI Adaptive Learning",
+            category: "Full Stack Project",
+            description: "AI-powered adaptive learning platform for JEE/NEET students. Features Why Engine (misconception detection), Subject-wise Quiz, Brain Map radar chart, and JWT authentication. Targets ₹10,000 crore Indian EdTech market."
         }
     },
     br: {
@@ -40,9 +40,9 @@ const projectStrings: Record<"en-us" | "br", ProjectStrings> = {
             description: "Um jogo de Pedra Papel Tesoura baseado em console, desenvolvido com Java e conceitos de Programação Orientada a Objetos. Possui rastreamento de pontuação e lógica de jogo limpa usando princípios de POO como encapsulamento e herança."
         },
         fourth: {
-            title: "Exam DNA",
-            category: "App Web Frontend",
-            description: "Uma aplicação frontend moderna em React construída para a plataforma Exam DNA. Apresenta uma interface responsiva e uma experiência de usuário perfeita."
+            title: "ExamDNA — AI Adaptive Learning",
+            category: "Projeto Full Stack",
+            description: "Plataforma de aprendizado adaptativo com IA para estudantes JEE/NEET. Apresenta Why Engine (detecção de equívocos), Quiz por disciplina, gráfico de radar Brain Map e autenticação JWT. Visa o mercado indiano de EdTech de ₹10.000 crore."
         }
     }
 };
