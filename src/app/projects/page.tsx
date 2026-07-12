@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
             ],
             image: "/assets/projects/Pokecut(3).jpg",
             github: "https://github.com/ayush7932singh/RockPaperScissors",
-            liveDemo: null
+            liveDemo: "https://ayush7932singh.github.io/RockPaperScissors/webapp/"
         },
         {
             index: 4,
